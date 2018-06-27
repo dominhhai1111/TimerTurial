@@ -62,7 +62,7 @@ class PrefUtil {
 
         fun setAlarmSetTime(time: Long, context: Context) {
             val editor = PreferenceManager.getDefaultSharedPreferences(context).edit()
-            editor.putLong(ALARM_SET_TIME_ID, 0)
+            editor.putLong(ALARM_SET_TIME_ID, time)
             editor.apply()
         }
     }
